@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #171a21, #0e1013);
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #03e1e9;
+}
+button {
+    background-color: #600277;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #600277;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+input[type="text"]:focus {
+    outline: none;
+    border-color: #600277;
+}
+#coordinates, #commentsList, #indexedDBList {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.comment-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+.comment-item:hover {
+    background-color: #f1f1f1;
+}
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
